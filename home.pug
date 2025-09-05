@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Home
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    nav
+      a(href="/") Home
+      a(href="/users") Users
+
+    h1 Ajouter un étudiant
+    form(action="/add" method="POST")
+      input(type="text" name="name" placeholder="Nom" required)
+      input(type="date" name="birth" required)
+      button(type="submit") Ajouter

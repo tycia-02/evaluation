@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 40px;
+  background: #000;
+  color: #fff;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #f00;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+h1 {
+  color: #f00;
+  margin-bottom: 20px;
+}
+
+form {
+  margin: 20px auto;
+  padding: 20px;
+  background: #111;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #f00;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #c00;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px 15px;
+  background: #111;
+  border-radius: 5px;
+}
+
+span.student-info {
+  flex-grow: 1;
+  text-align: left;
+}
+
+a[href^="/edit"] {
+  color: #f00;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+a[href^="/edit"]:hover {
+  color: #fff;
+}
+
+form[action^="/delete"] button {
+  background: #fff;
+  color: #f00;
+  padding: 5px 8px;
+  margin-left: 10px;
+}
+
+form[action^="/delete"] button:hover {
+  background: #f00;
+  color: #fff;
+}

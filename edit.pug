@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title Edit
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    nav
+      a(href="/") Home
+      a(href="/users") Users
+
+    h1 Modifier un étudiant
+    form(action=`/edit/${student.id}` method="POST")
+      input(type="text" name="name" value=student.name required)
+      input(type="date" name="birth" value=student.birthISO required)
+      button(type="submit") Enregistrer

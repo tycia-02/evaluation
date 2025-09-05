@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Users
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    nav
+      a(href="/") Home
+      a(href="/users") Users
+
+    h1 Liste des étudiants
+    ul
+      each student in students
+        li
+          | #{student.name} - #{student.birthFormatted} 
+          a(href=`/edit/${student.id}`) [Modifier]
+          form(action=`/delete/${student.id}` method="POST" style="display:inline")
+            button(type="submit") X
